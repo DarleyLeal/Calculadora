@@ -1,8 +1,6 @@
-preco = float(input('Digite o preço do produto:'))
-p = float(input('Digite o percentual de desconto (0-100)%'))
+km = int(input('Quantos KM foram percorridos?'))
+dias = int(input('Por quantos dias ele foi alugado?'))
 
-desconto = preco * (p / 100)
-final = preco - desconto
-
-print('0 o preço do produto é {}, desconto de {}%' .format(preco,p))
-print('Valor calculado de desconto: {}. Valor final do produto: '.format(desconto, final))
+preco = 60 * dias + 0.15 * km
+print('km = {}. Dias: {}'.format(km, dias))
+print('Valor a ser pago: {}'.format(preco))
